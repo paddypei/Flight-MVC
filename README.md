@@ -1,4 +1,4 @@
-# Flight-MVC
+# Flight//MVC
 A simple starting point for new PHP web application built ontop of Flight (http://flightphp.com/).
 
 # Background Info
