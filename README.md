@@ -1,5 +1,5 @@
 # Flight//MVC
-A simple starting point for new PHP web application built ontop of Flight (http://flightphp.com/).
+A simple starting point for new PHP web applications built ontop of Flight (http://flightphp.com/).
 
 # Background Info
 // June 13, 2015
@@ -26,7 +26,7 @@ The pages available are index, contact, about. They don't do anything, and are m
   This class contains methods for handing 3 pages: index, about, contact
   (Where required) it builds an array of nessessary information needed for the view, then makes a call to parent:singleColumLayout passing in the needed page, the page title, and the array.
   
-/app/controllers/Routes.php is instantinated from the index.php page
+/app/controllers/Routes.php is instantiated from the index.php page
   This class defines the location of the views directory.
   It also will server as a list of all pages, pointing to whatever controller is needed to display them.
 
@@ -40,7 +40,7 @@ The pages available are index, contact, about. They don't do anything, and are m
   This file is all of 4 lines long, and just simply setups the mod_rewrite rules needed for the Routes to work.
   
 /index.php
-  Our main file, simply calls the autoloader, instainaiates Routes, and starts the Flight framework.
+  Our main file, simply calls the autoloader, instantiates Routes, and starts the Flight framework.
   
 What were left with isn't a completed app, the model in "MVC" is clearly still missing here. This dosn't do anything. It's simply a starting place for future apps to save me (and hopefully you) a little bit of setup time.
 
