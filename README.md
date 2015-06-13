@@ -6,7 +6,7 @@ A simple starting point for new PHP web application built ontop of Flight (http:
 
 So I'm doing my best on my own to move from the proceedural world of PHP to the object-oriented landscape. 
 
-While I already understood at least what Objects and Classes were, I haven't been using in the best possible way. As well I needed to learn about the benefits of an autoloader and Composer. Namespacing and the like.
+While I already understood at least what Objects and Classes were, I haven't been using them in the best possible way. As well I needed to learn about the benefits of an autoloader and Composer. Namespacing and the like.
 
 After absorbing what I could about SOLID principles, and at least the basic concept of Model-View-Controller, I decided I needed to put these to work right away if I stood any chance of retaining the information, and gaining a better understanding.  
 
