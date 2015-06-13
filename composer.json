@@ -1,0 +1,13 @@
+{
+    "require": {
+        "mikecao/flight": "1.0"
+    }, 
+    
+    "autoload": {
+        "psr-0": {
+            "models\\": "app/",
+            "views\\": "app/",
+            "controllers\\": "app/"
+        }
+    }
+}
