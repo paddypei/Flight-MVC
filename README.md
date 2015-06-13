@@ -2,6 +2,8 @@
 A simple starting point for new PHP web application built ontop of Flight (http://flightphp.com/).
 
 # Background Info
+// June 13, 2015
+
 So I'm doing my best on my own to move from the proceedural world of PHP to the object-oriented landscape. 
 
 While I already understood at least what Objects and Classes were, I haven't been using in the best possible way. As well I needed to learn about the benefits of an autoloader and Composer. Namespacing and the like.
