@@ -9,7 +9,7 @@
     @endif
     <form method="post" action="sign-up" role="form">
         <div class="form-group">
-            <label for="name">Name: </label>
+            <label for="name">Username: </label>
             <input type="text" required id="name" name="name" class="form-control" value="{{ isset($name) ? $name : '' }}"><br>
         </div>
         <div class="form-group">
