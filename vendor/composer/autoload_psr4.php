@@ -6,4 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Windwalker\\Renderer\\' => array($vendorDir . '/windwalker/renderer'),
+    'Windwalker\\Registry\\' => array($vendorDir . '/windwalker/registry'),
+    'Windwalker\\Data\\' => array($vendorDir . '/windwalker/data'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
+    'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
 );

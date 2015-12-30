@@ -9,4 +9,11 @@ return array(
     'views\\' => array($baseDir . '/app'),
     'models\\' => array($baseDir . '/app'),
     'controllers\\' => array($baseDir . '/app'),
+    'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
+    'Illuminate\\View' => array($vendorDir . '/illuminate/view'),
+    'Illuminate\\Support' => array($vendorDir . '/illuminate/support'),
+    'Illuminate\\Filesystem' => array($vendorDir . '/illuminate/filesystem'),
+    'Illuminate\\Events' => array($vendorDir . '/illuminate/events'),
+    'Illuminate\\Database' => array($vendorDir . '/illuminate/database'),
+    'Illuminate\\Container' => array($vendorDir . '/illuminate/container'),
 );

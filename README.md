@@ -1,47 +1,19 @@
 # Flight//MVC
-A simple starting point for new PHP web applications built ontop of Flight (http://flightphp.com/).
+A simple starting point for new web applications to get you up and running with an MVC framework in no time. Built ontop of FlightPHP (http://flightphp.com/), Flight//MVC makes use of the Eloquent ORM and the Blade templating engine (with some help from Windwalker), to allow you to more easily build RESTful web applications, within an MVC archetecture. Flight//MVC comes preload with a basic template (Designed with Twitter Bootstrap) and a User model to get you started.
 
 # Background Info
-// June 13, 2015
+// Dec 2015
 
-So I'm doing my best on my own to move from the proceedural world of PHP to the object-oriented landscape. 
+Version 1 of this was created while I attempted to learn about the FlightPHP framework, while learning about MVC archetecture. Likewise, Version 2 is also the result of nothing more then my ability to grown and learn. While learning basics about Laravel, I wanted to get some extra practice in with Blade and Eloquent specifically, so I imported them into FlightPHP and decided to share you with the results. Good or bad.
 
-While I already understood at least what Objects and Classes were, I haven't been using them in the best possible way. As well I needed to learn about the benefits of an autoloader and Composer. Namespacing and the like.
+#How to Use
 
-After absorbing what I could about SOLID principles, and at least the basic concept of Model-View-Controller, I decided I needed to put these to work right away if I stood any chance of retaining the information, and gaining a better understanding.  
+1) Included is a database.sql file with the Users table that Flight//MVC comes preloaded with.
 
-I understand I still need to learn one of the big Frameworks ontop of all of this ( which is the next step ), but for now I choose to go with Flight-PHP to get things started. 
+2) In the index.php file is where I import Eloquent and where you will need to set your Database Connection information. You will probably want to modify this for use in production.
 
-# About Flight//MVC
+3) In /controllers/BasicController.php is where I set the functions for rendering pages using either Flights default engine, or Blade. When using blade, be sure that the template is named with a .blade.php file extension, nad placed within the views folder. 
 
-I setup Flight using Composer, with autoload set to psr-0. I then setup the directory structure. Setup my routs, and built some fairly simple Controllers to deal with handing Views for 3 basic pages. 
+4) /controllers/Routes.php is where all the routes for the pages are set. I included a wildcard "catch all" at the bottom of the page to redirect to index.
 
-The pages available are index, contact, about. They don't do anything, and are more just place holders.
-
-/app/controllers/LayoutController.php
-  This class contains one method, singleColumnLayout, which is used for handeling the template I use. The header, the body, and the footer.
-  I intend to add additional methods as needed, such as doubleColumnLayout to handle pages that have a side navigation for example.
-  
-/app/controllers/PagesController.php extends LayoutController.php
-  This class contains methods for handing 3 pages: index, about, contact
-  (Where required) it builds an array of nessessary information needed for the view, then makes a call to parent:singleColumLayout passing in the needed page, the page title, and the array.
-  
-/app/controllers/Routes.php is instantiated from the index.php page
-  This class defines the location of the views directory.
-  It also will server as a list of all pages, pointing to whatever controller is needed to display them.
-
-/app/views
-  This directory contains the various template files needed. header.php, footer.php for the generic template. Then hello, about, contact for the body templates.
-  
-/vendor
-  This directory contains our autoloader, and the Flight PHP framework.
-
-/.htaccess
-  This file is all of 4 lines long, and just simply setups the mod_rewrite rules needed for the Routes to work.
-  
-/index.php
-  Our main file, simply calls the autoloader, instantiates Routes, and starts the Flight framework.
-  
-What were left with isn't a completed app, the model in "MVC" is clearly still missing here. This dosn't do anything. It's simply a starting place for future apps to save me (and hopefully you) a little bit of setup time.
-
-  
+Note: /models/Membership.php sets a very poor AuthToken on line 14. You will probably want to reprogram that to something more secure before putting this into production.

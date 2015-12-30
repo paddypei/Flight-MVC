@@ -1,28 +1,33 @@
 <?php namespace controllers;
 
 use Flight; 
+use models\Membership as Membership;
 
-class PagesController extends LayoutController {
+class PagesController extends BasicController {
 
     public static function index()
     {
-        $array = array('name' => 'Guest');
-        parent::singleColumnLayout('hello', 'Index', $array);
+        echo (new Membership)->login;
+        parent::blade('index');
         return;
     }
     
     public static function about()
     {   
         $array = array();
-        parent::singleColumnLayout('about', 'About Us', $array);
+        parent::blade('about', $array);
         return;
     }
     
     public static function contact()
     {
         $array = array();
-        parent::singleColumnLayout('contact', 'Contact Us', $array);
+        parent::blade('contact', $array);
         return;
     }
     
+    public static function redirect()
+    {
+        return Flight::redirect('index');
+    }
 }

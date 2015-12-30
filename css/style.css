@@ -1,0 +1,17 @@
+@import url('http://fonts.googleapis.com/css?family=Oswald');
+
+a {
+    color:#26B6EB; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-size: 14px;
+}
+a:hover { color:#5D5955; }
+
+.jumbotron { padding-top: 150px; }
+.jumbotron h1 { font-family: "Oswald"; }
+
+.createSpace {
+    display: block;
+    height: 45px;
+}

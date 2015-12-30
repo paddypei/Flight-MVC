@@ -1,6 +1,10 @@
 {
     "require": {
-        "mikecao/flight": "1.0"
+        "mikecao/flight": "1.0",
+        "windwalker/renderer": "2.*",
+        "illuminate/view": "4.*",
+	"illuminate/database": "*"
+    
     }, 
     
     "autoload": {
