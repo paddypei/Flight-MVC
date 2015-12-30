@@ -4,7 +4,7 @@ A simple starting point for new web applications to get you up and running with 
 # Background Info
 // Dec 2015
 
-Version 1 of this was created while I attempted to learn about the FlightPHP framework, while learning about MVC archetecture. Likewise, Version 2 is also the result of nothing more then my ability to grown and learn. While learning basics about Laravel, I wanted to get some extra practice in with Blade and Eloquent specifically, so I imported them into FlightPHP and decided to share you with the results. Good or bad.
+Version 1 of this was created while I attempted to learn about the FlightPHP framework, while learning about MVC archetecture. Likewise, Version 2 is also the result of nothing more then my desire to grown and learn. While learning basics about Laravel, I wanted to get some extra practice in with Blade and Eloquent specifically, so I imported them into FlightPHP and decided to share you with the results. Good or bad.
 
 #How to Use
 
